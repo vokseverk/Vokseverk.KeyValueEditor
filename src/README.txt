@@ -6,3 +6,4 @@ to a document, e.g. if you have an Employee doctype and you want the employees
 to be able to add some personal facts like shoesize, favorite album etc., but
 you don't want to dictate which fields exactly.
 
+Works in Umbraco 7 and in Umbraco 8.
