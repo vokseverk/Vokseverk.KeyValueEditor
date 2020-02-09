@@ -1,0 +1,19 @@
+.vv-keyvalue-editor {
+	
+}
+
+.vv-keyvalue-editor .flex-wrap.textbox-wrapper {
+	justify-content: flex-start;
+}
+
+.vv-keyvalue-editor .vv-keyvalue-key {
+	width: 140px;
+	flex: 0 1 140px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.vv-keyvalue-editor .vv-keyvalue-value {
+	margin-left: 10px;
+	flex: 1 1 50%;
+}

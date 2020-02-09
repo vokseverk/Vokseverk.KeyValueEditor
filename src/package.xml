@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE umbPackage [
+	<!ENTITY % version SYSTEM "version.ent">
+	%version;
+]>
+<umbPackage>
+	<files>
+		<file ref="package.manifest" />
+		<file ref="keyvalueeditor.controller.js" />
+		<file ref="keyvalueeditor.css" />
+		<file ref="keyvalueeditor.html" />
+	</files>
+	<info>
+		<package>
+			<name>Key/Value Editor</name>
+			<version>&packageVersion;</version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>https://our.umbraco.com/projects/backoffice-extensions/key-value-editor/</url>
+			<requirements>
+				<major>7</major>
+				<minor>0</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Chriztian Steinmeier</name>
+			<website>https://vokseverk.dk</website>
+		</author>
+		<readme><include xmlns="http://www.w3.org/2001/XInclude" href="README.txt" parse="text" /></readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<control />
+	<Actions />
+</umbPackage>
