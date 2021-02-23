@@ -117,4 +117,4 @@
 	}
 }
 
-angular.module("umbraco").controller("Vokseverk.PropertyEditors.KeyValueEditorController", KeyValueEditorController);
+angular.module("umbraco").controller("Vokseverk.KeyValueEditorController", KeyValueEditorController);
