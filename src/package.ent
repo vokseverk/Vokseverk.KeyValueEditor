@@ -2,5 +2,5 @@
 <!ENTITY packageVersion "0.9.0">
 <!ENTITY packageAuthor "Vokseværk">
 <!ENTITY packageAuthorURL "https://vokseverk.dk/">
-<!ENTITY packageURL "https://our.umbraco.com/projects/backoffice-extensions/key-value-editor/">
+<!ENTITY packageURL "https://our.umbraco.com/packages/backoffice-extensions/keyvalue-editor/">
 <!ENTITY packageREADME "A property editor that can be used for adding multiple sets of keys and values to a document.">
