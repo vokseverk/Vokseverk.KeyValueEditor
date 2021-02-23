@@ -14,7 +14,7 @@
 		/App_Plugins/MyPropertyEditor/package.manifest
 	-->
 	<files>
-		<file ref="package.manifest" />
+		<file ref="package.manifest" versioned="no" />
 		<file ref="keyvalueeditor.controller.js" />
 		<file ref="keyvalueeditor.css" />
 		<file ref="keyvalueeditor.html" />
