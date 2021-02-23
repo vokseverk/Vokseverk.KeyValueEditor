@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
+	<creator>
+		<name>Vokseværk</name>
+		<link>https://vokseverk.dk/</link>
+	</creator>
+	<area alias="keyvalue">
+		<key alias="keyPlaceholder">E.g. 'Colour'</key>
+		<key alias="valuePlaceholder">E.g. 'Orangey'</key><!-- Hi Marc :) -->
+	</area>
+</language>
