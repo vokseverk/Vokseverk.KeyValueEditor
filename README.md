@@ -40,8 +40,33 @@ sets, as well as a maximum.
 
 ## Rendering the output
 
-You should grab the appropriate Property Value Converter from the release page
-and add that to your solution (or put it directly into the `App_Code/` folder).
+The raw value is a JSON array with the keys and values, e.g.:
+
+```json
+[
+  {
+    "key": "Species",
+    "value": "Tyrannosaurus Rex",
+    "hasFocus": true
+  },
+  {
+    "key": "Version",
+    "value": "4.1",
+    "hasFocus": true
+  }
+]
+```
+
+(The `hasFocus` key is internal and inherited from the **Multiple Textstrings**
+editor - can safely be ignored).
+
+You can render it in a couple of different ways:
+
+### 1. Using the Property Value Converter (preferred)
+
+You can grab the appropriate *Property Value Converter* from the
+[releases page](releases) and add that to your solution (or put it directly
+into the `App_Code/` folder).
 
 Then you can render the results like this using Models Builder
 (assuming your property was named **Additional settings** with the
@@ -56,3 +81,16 @@ alias `additionalSettings`):
 </dl>
 ```
 
+### 2. Without the Property Value Converter
+
+If you can't use the converter, you can use the following way of accessing the
+keys and values:
+
+```razor
+<dl>
+  @foreach(var setting in Model.AdditionalSettings) {
+    <dt>@(setting["key"])</dt>
+    <dd>@(setting["value"])</dd>
+  }
+</dl>
+```
