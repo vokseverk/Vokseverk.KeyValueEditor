@@ -7,6 +7,29 @@ set, and you can sort them by using the handles on the right.)
 
 It should work in Umbraco 7 as well as in Umbraco 8.
 
+## Screenshots
+
+### Property editor
+
+**No data**
+
+![Empty Editor Screen](images/keyvalue-empty.jpg)
+
+***
+
+**Added set - blank**
+
+![Empty Editor Screen](images/keyvalue-blank.jpg)
+
+***
+
+**With content**
+
+### Configuration
+
+![Config Screen](images/keyvalue-config.jpg)
+
+
 ## Using the editor
 
 When creating a new DataType, choose `Key/Value Editor` as the property
