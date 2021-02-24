@@ -46,19 +46,14 @@ The raw value is a JSON array with the keys and values, e.g.:
 [
   {
     "key": "Species",
-    "value": "Tyrannosaurus Rex",
-    "hasFocus": true
+    "value": "Tyrannosaurus Rex"
   },
   {
     "key": "Version",
-    "value": "4.1",
-    "hasFocus": true
+    "value": "4.1"
   }
 ]
 ```
-
-(The `hasFocus` key is internal and inherited from the **Multiple Textstrings**
-editor - can safely be ignored).
 
 You can render it in a couple of different ways:
 
