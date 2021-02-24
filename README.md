@@ -19,11 +19,13 @@ It should work in Umbraco 7 as well as in Umbraco 8.
 
 **Added set - blank**
 
-![Empty Editor Screen](images/keyvalue-blank.jpg)
+![Editor Screen with blank fields](images/keyvalue-blank.jpg)
 
 ***
 
 **With content**
+
+![Editor Screen with 4 sets of keys and values](images/keyvalue-content.jpg)
 
 ### Configuration
 
