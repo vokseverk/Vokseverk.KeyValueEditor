@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="da" intName="Danish" localName="dansk" lcid="" culture="da-DK">
+	<creator>
+		<name>Vokseværk</name>
+		<link>https://vokseverk.dk/</link>
+	</creator>
+	<area alias="keyvalue">
+		<key alias="keyPlaceholder">Indstilling</key>
+		<key alias="valuePlaceholder">Værdi</key>
+	</area>
+</language>

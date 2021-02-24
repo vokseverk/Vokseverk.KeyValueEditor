@@ -17,3 +17,10 @@
 	margin-left: 10px;
 	flex: 1 1 50%;
 }
+
+.vv-keyvalue-key::placeholder,
+.vv-keyvalue-value::placeholder {
+	font-style: italic;
+	font-weight: normal;
+	font-size: 0.8em;
+}

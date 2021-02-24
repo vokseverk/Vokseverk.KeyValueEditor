@@ -1,16 +1,22 @@
-<div class="umb-multiple-textbox vv-keyvalue-editor" ng-controller="Vokseverk.PropertyEditors.KeyValueEditorController">
+<div class="umb-multiple-textbox vv-keyvalue-editor" ng-controller="Vokseverk.KeyValueEditorController">
 
 	<div ui-sortable="sortableOptions" ng-model="model.value">
 		<div class="flex flex-wrap textbox-wrapper" ng-repeat="item in model.value">
-			<input type="text" name="item_{{$index}}_key" class="umb-textstring textstring vv-keyvalue-key"
+			<input type="text" name="item_{{$index}}_key"
+				class="umb-textstring textstring vv-keyvalue-key"
 				ng-model="item.key"
 				ng-keyup="addRemoveOnKeyDown($event, $index)"
 				focus-when="{{item.hasFocus}}"
+				localize="placeholder"
+				placeholder="@keyvalue_keyPlaceholder"
 			/>
 
-			<input type="text" name="item_{{$index}}_value" class="umb-textstring textstring vv-keyvalue-value"
+			<input type="text" name="item_{{$index}}_value"
+				class="umb-textstring textstring vv-keyvalue-value"
 				ng-model="item.value"
 				ng-keyup="addRemoveOnKeyDown($event, $index)"
+				localize="placeholder"
+				placeholder="@keyvalue_valuePlaceholder"
 			/>
 			<i class="icon icon-navigation handle" localize="title" title="@general_move"></i>
 			
