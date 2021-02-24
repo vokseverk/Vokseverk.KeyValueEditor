@@ -62,8 +62,8 @@ You can render it in a couple of different ways:
 ### 1. Using the Property Value Converter (preferred)
 
 You can grab the appropriate *Property Value Converter* from the
-[releases page](releases) and add that to your solution (or put it directly
-into the `App_Code/` folder).
+[releases page](https://github.com/vokseverk/Vokseverk.KeyValueEditor/releases)
+and add that to your solution (or put it directly into the `App_Code/` folder).
 
 Then you can render the results like this using Models Builder
 (assuming your property was named **Additional settings** with the
