@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE umbPackage [
+	<!ENTITY % packageInfo SYSTEM "package.ent">
+	%packageInfo;
+]>
 <manifest>
 	<propertyEditor>
 		<name>Key/Value Editor</name>
-		<alias>Vokseverk.KeyValueEditor</alias>
+		<alias>&packageAlias;</alias>
 		<icon>icon-bulleted-list</icon>
 		<group>lists</group>
 		<editor>

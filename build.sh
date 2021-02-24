@@ -1,4 +1,4 @@
-PKG_NAME=`grep -o ' packageName \"\(.*\)\"' src/package.ent | awk '{print $2}' | sed 's/"//g'`
+PKG_NAME=`grep -o ' packageAlias \"\(.*\)\"' src/package.ent | awk '{print $2}' | sed 's/"//g'`
 VERSION=`grep -o ' packageVersion \"\(.*\)\"' src/package.ent | awk '{print $2}' | sed 's/"//g'`
 
 # Create the dist directory if needed

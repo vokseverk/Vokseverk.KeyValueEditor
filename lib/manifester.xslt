@@ -17,7 +17,7 @@
 		omit-xml-declaration="yes"
 	/>
 	
-	<xsl:variable name="packageName" select="'&packageName;'" />
+	<xsl:variable name="packageAlias" select="'&packageAlias;'" />
 	<xsl:variable name="version" select="'v&packageVersion;'" />
 	
 	<xsl:variable name="quot">&quot;</xsl:variable>
@@ -127,7 +127,7 @@
 	</xsl:template>
 	
 	<xsl:template match="*" mode="versioned">
-		<xsl:variable name="pluginpath" select="concat('~/App_Plugins/', $packageName, '/')" />
+		<xsl:variable name="pluginpath" select="concat('~/App_Plugins/', $packageAlias, '/')" />
 		<xsl:value-of select="concat($pluginpath, $version, '/', .)" />
 	</xsl:template>
 	

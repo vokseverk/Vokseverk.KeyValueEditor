@@ -20,7 +20,7 @@
 		cdata-section-elements="Design readme"
 	/>
 
-	<xsl:variable name="packageName" select="'&packageName;'" />
+	<xsl:variable name="packageAlias" select="'&packageAlias;'" />
 	<xsl:variable name="folderPrefix" select="/umbPackage/files/@folderPrefix" />
 	<xsl:variable name="version" select="'v&packageVersion;'" />
 
@@ -61,14 +61,14 @@
 		<file>
 			<guid><xsl:value-of select="@ref" /></guid>
 			<orgPath>
-				<xsl:value-of select="concat('/App_Plugins/', $packageName, '/lang')" />
+				<xsl:value-of select="concat('/App_Plugins/', $packageAlias, '/lang')" />
 			</orgPath>
 			<orgName><xsl:value-of select="@ref" /></orgName>
 		</file>
 	</xsl:template>
 	
 	<xsl:template match="@*" mode="versioned">
-		<xsl:value-of select="concat('/App_Plugins/', $packageName, '/')" />
+		<xsl:value-of select="concat('/App_Plugins/', $packageAlias, '/')" />
 		<xsl:if test="not(../@versioned = 'no')"><xsl:value-of select="$version" /></xsl:if>
 	</xsl:template>
 
