@@ -16,7 +16,7 @@
 		$scope.model.value = [];
 	}
 
-	// Add any fields that there isn't values for
+	// Add any fields that there aren't values for
 	if ($scope.model.config.min > 0) {
 		for (var i = 0; i < $scope.model.config.min; i++) {
 			if ((i + 1) > $scope.model.value.length) {
