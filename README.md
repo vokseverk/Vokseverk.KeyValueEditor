@@ -11,13 +11,7 @@ It should work in Umbraco 7 as well as in Umbraco 8.
 
 ### Property editor
 
-**No data**
-
-![Empty Editor Screen](images/keyvalue-empty.jpg)
-
-***
-
-**Added set - blank**
+**Blank editor**
 
 ![Editor Screen with blank fields](images/keyvalue-blank.jpg)
 
