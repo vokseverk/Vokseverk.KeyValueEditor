@@ -5,7 +5,7 @@
 		<link>https://vokseverk.dk/</link>
 	</creator>
 	<area alias="keyvalue">
-		<key alias="keyPlaceholder">E.g. 'Colour'</key>
-		<key alias="valuePlaceholder">E.g. 'Orangey'</key><!-- Hi Marc :) -->
+		<key alias="keyPlaceholder">Setting</key>
+		<key alias="valuePlaceholder">Value</key>
 	</area>
 </language>
