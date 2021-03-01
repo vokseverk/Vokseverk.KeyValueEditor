@@ -1,3 +1,5 @@
+<img align="right" src="images/keyvalue-icon.png" width="120" height="120" alt="Two text inputs side-by-side with the values 'Key' and 'Value' on top of the Vokseværk 'fire-heart' logo" />
+
 # Key/Value Editor for Umbraco
 
 This property editor is *heavily* based on the **Multiple Textstrings** built-in
