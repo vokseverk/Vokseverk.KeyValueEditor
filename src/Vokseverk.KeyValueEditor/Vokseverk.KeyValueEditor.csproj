@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <ContentTargetFolders>.</ContentTargetFolders>
+        <Product>Vokseverk.KeyValueEditor</Product>
+        <PackageId>Vokseverk.KeyValueEditor</PackageId>
+        <Title>Vokseverk.KeyValueEditor</Title>
+        <Description>This property editor is heavily based on the Multiple Textstrings built-in property editor, so should look and behave very similar to that one, even though it has two textboxes. (So hitting Enter/Return adds another set, and you can sort them by using the handles on the right.)</Description>
+        <PackageTags>umbraco plugin package</PackageTags>
+        <RootNamespace>Vokseverk.KeyValueEditor</RootNamespace>
+        <Version>1.2.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Umbraco.Cms.Web.Website" Version="9.3.1" />
+        <PackageReference Include="Umbraco.Cms.Web.BackOffice" Version="9.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="App_Plugins\Vokseverk.KeyValueEditor\**\*.*">
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+        <None Include="build\**\*.*">
+            <Pack>True</Pack>
+            <PackagePath>buildTransitive</PackagePath>
+        </None>
+    </ItemGroup>
+</Project>

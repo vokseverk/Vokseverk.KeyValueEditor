@@ -1,0 +1,39 @@
+{
+    "propertyEditors": [
+        {
+            "alias": "Vokseverk.KeyValueEditor",
+            "name": "Key/Value Editor",
+            "icon": "icon-bulleted-list",
+            "group": "lists",
+            "editor": {
+                "view": "~/App_Plugins/Vokseverk.KeyValueEditor/views/keyvalueeditor.html"
+            },
+            "prevalues": {
+                "fields": [
+                    {
+                        "label": "Minimum",
+                        "key": "min",
+                        "description": "Enter the minimum number of key/value pairs",
+                        "view": "number"
+                    },
+                    {
+                        "label": "Maximum",
+                        "key": "max",
+                        "description": "Enter the maximum number of key/value pairs",
+                        "view": "number"
+                    }
+                ]
+            },
+            "defaultConfig": {
+                "min": 0,
+                "max": 5
+            }
+        }
+    ],
+    "css": [
+        "~/App_Plugins/Vokseverk.KeyValueEditor/css/keyvalueeditor.css"
+    ],
+    "javascript": [
+        "~/App_Plugins/Vokseverk.KeyValueEditor/js/keyvalueeditor.controller.js"
+    ]
+}
