@@ -1,0 +1,27 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <VokseverkKeyValueEditorContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\Vokseverk.KeyValueEditor\**\*.*</VokseverkKeyValueEditorContentFilesPath>
+    </PropertyGroup>
+
+    <Target Name="CopyVokseverkKeyValueEditorAssets" BeforeTargets="Build">
+        <ItemGroup>
+            <VokseverkKeyValueEditorContentFiles Include="$(VokseverkKeyValueEditorContentFilesPath)" />
+        </ItemGroup>
+        <Message Text="Copying Vokseverk.KeyValueEditor files: $(VokseverkKeyValueEditorContentFilesPath) - #@(VokseverkKeyValueEditorContentFiles->Count()) files"  Importance="high" />
+        <Copy
+            SourceFiles="@(VokseverkKeyValueEditorContentFiles)"
+            DestinationFiles="@(VokseverkKeyValueEditorContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\Vokseverk.KeyValueEditor\%(RecursiveDir)%(Filename)%(Extension)')"
+            SkipUnchangedFiles="true" />
+
+    </Target>
+
+    <Target Name="ClearVokseverkKeyValueEditorAssets" BeforeTargets="Clean">
+        <ItemGroup>
+            <VokseverkKeyValueEditorDir Include="$(MSBuildProjectDirectory)\App_Plugins\Vokseverk.KeyValueEditor\" />
+        </ItemGroup>
+        <Message Text="Clear old Vokseverk.KeyValueEditor data"  Importance="high" />
+        <RemoveDir Directories="@(VokseverkKeyValueEditorDir)"  />
+    </Target>
+
+</Project>
