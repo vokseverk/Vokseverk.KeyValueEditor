@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vokseverk.KeyValueEditor", "Vokseverk.KeyValueEditor\Vokseverk.KeyValueEditor.csproj", "{C4DE2166-D38C-44F9-8213-932E979E20F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{B6E1C4E8-D4DE-4E1D-B22B-7F039BB36821}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{C4DE2166-D38C-44F9-8213-932E979E20F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4DE2166-D38C-44F9-8213-932E979E20F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4DE2166-D38C-44F9-8213-932E979E20F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6E1C4E8-D4DE-4E1D-B22B-7F039BB36821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6E1C4E8-D4DE-4E1D-B22B-7F039BB36821}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6E1C4E8-D4DE-4E1D-B22B-7F039BB36821}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6E1C4E8-D4DE-4E1D-B22B-7F039BB36821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
