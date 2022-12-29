@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Project [
+	<!ENTITY % packageInfo SYSTEM "package.ent">
+	%packageInfo;
+]>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Product>&packageAlias;</Product>
+		<PackageId>&packageAlias;</PackageId>
+		<Title>&packageName;</Title>
+		<Description>&packageREADME;</Description>
+		<PackageTags>umbraco key-value umbraco-marketplace</PackageTags>
+		<Version>&packageVersion;</Version>
+		<Company>&packageAuthor;</Company>
+		<Authors>&packageAuthor;</Authors>
+		<Copyright>2020 © &packageAuthor;</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>&packageURL;</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/vokseverk/&packageAlias;</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
+
+</Project>

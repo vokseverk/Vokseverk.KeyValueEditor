@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Project [
+	<!ENTITY % packageInfo SYSTEM "package.ent">
+	%packageInfo;
+]>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<VokseverkPackageContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\&packageAlias;\**\*.*</VokseverkPackageContentFilesPath>
+	</PropertyGroup>
+
+	<Target Name="CopyVokseverkPackageAssets" BeforeTargets="Build">
+		<ItemGroup>
+			<VokseverkPackageContentFiles Include="$(VokseverkPackageContentFilesPath)" />
+		</ItemGroup>
+		<Message Text="Copying &packageSafeName; files: $(VokseverkPackageContentFilesPath) - #@(VokseverkPackageContentFiles->Count()) files"  Importance="high" />
+		<Copy
+			SourceFiles="@(VokseverkPackageContentFiles)"
+			DestinationFiles="@(VokseverkPackageContentFiles->'$(MSBuildProjectDirectory)\App_Plugins\&packageAlias;\%(RecursiveDir)%(Filename)%(Extension)')"
+			SkipUnchangedFiles="true" />
+
+	</Target>
+
+	<Target Name="ClearVokseverkPackageAssets" BeforeTargets="Clean">
+		<ItemGroup>
+			<VokseverkPackageDir Include="$(MSBuildProjectDirectory)\App_Plugins\&packageAlias;\" />
+		</ItemGroup>
+		<Message Text="Clear old &packageSafeName; files"  Importance="high" />
+		<RemoveDir Directories="@(VokseverkPackageDir)"  />
+	</Target>
+
+</Project>
