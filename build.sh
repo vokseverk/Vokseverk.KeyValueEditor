@@ -8,10 +8,14 @@ else
 	rm dist/package/*.*
 fi
 
-if [[ ! -d dist/nuget/$PKG_NAME ]]; then
-	echo "Please create the basic nuget package structure using `dotnet new umbracopackage --name $PKG_NAME` in the dist/nuget directory."
-	exit 0
+if [[ -d dist/nuget/$PKG_NAME ]]; then
+	rm -rf dist/nuget/$PKG_NAME
 fi
+
+# Create nuget package structure
+mkdir -p dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME
+mkdir -p dist/nuget/$PKG_NAME/buildTransitive
+
 
 # Copy files to package dirs
 cp src/*.css dist/package/
@@ -22,7 +26,7 @@ cp src/lang/*.xml dist/package/
 cp src/*.css dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME/
 cp src/*.js dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME/
 cp src/*.html dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME/
-cp src/lang/*.xml dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME/lang/
+cp src/lang/*.xml dist/nuget/$PKG_NAME/App_Plugins/$PKG_NAME/Lang/
 
 
 # Copy the Value Converters to the dist/ folder
