@@ -8,7 +8,7 @@
 		<VokseverkPackageContentFilesPath>$(MSBuildThisFileDirectory)..\App_Plugins\&packageAlias;\**\*.*</VokseverkPackageContentFilesPath>
 	</PropertyGroup>
 
-	<Target Name="CopyVokseverkPackageAssets" BeforeTargets="Build">
+	<Target Name="Copy&packageNamespace;&packageSafeName;PackageAssets" BeforeTargets="Build">
 		<ItemGroup>
 			<VokseverkPackageContentFiles Include="$(VokseverkPackageContentFilesPath)" />
 		</ItemGroup>
@@ -20,7 +20,7 @@
 
 	</Target>
 
-	<Target Name="ClearVokseverkPackageAssets" BeforeTargets="Clean">
+	<Target Name="Clear&packageNamespace;&packageSafeName;PackageAssets" BeforeTargets="Clean">
 		<ItemGroup>
 			<VokseverkPackageDir Include="$(MSBuildProjectDirectory)\App_Plugins\&packageAlias;\" />
 		</ItemGroup>
