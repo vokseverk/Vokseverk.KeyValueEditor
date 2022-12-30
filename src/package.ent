@@ -1,4 +1,7 @@
-<!ENTITY packageVersion "1.1.0">
+<!ENTITY packageVersion "2.0.0">
+<!ENTITY packageVersionV9 "2.0.0">
+<!ENTITY packageVersionV10 "3.0.0">
+<!ENTITY packageVersionV11 "4.0.0">
 <!ENTITY packageNamespace "Vokseverk">
 <!ENTITY packageSafeName "KeyValueEditor">
 <!ENTITY packageName "Vokseværk Key/Value Editor">
@@ -8,3 +11,6 @@
 <!ENTITY packageIconURL "https://raw.githubusercontent.com/vokseverk/Vokseverk.KeyValueEditor/main/images/vv-keyvalueeditor-icon.png">
 <!ENTITY packageURL "https://our.umbraco.com/packages/backoffice-extensions/keyvalue-editor/">
 <!ENTITY packageREADME "A property editor that can be used for adding multiple sets of keys and values to a document.">
+<!ENTITY packageRepoURL "https://github.com/vokseverk/Vokseverk.KeyValueEditor">
+<!ENTITY packageTags "umbraco key-value umbraco-marketplace">
+<!ENTITY packageDESC "An Umbraco property editor that can be used for adding multiple sets of keys and values to a document.">
