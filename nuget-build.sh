@@ -23,6 +23,9 @@ cp src/*.html $PACKAGE_DIR/
 cp src/lang/*.xml $PACKAGE_DIR/Lang/
 
 
+# Copy icon file to the nuget folder
+cp images/vv-keyvalueeditor-icon.png $NUGET_DIR
+
 # Copy the Value Converter and README to the nuget folder
 cp src/v10/*.cs $NUGET_DIR
 cp src/v10/*.md $NUGET_DIR
