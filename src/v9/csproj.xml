@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE Project [
-	<!ENTITY % packageInfo SYSTEM "package.ent">
+	<!ENTITY % packageInfo SYSTEM "../package.ent">
 	%packageInfo;
 ]>
 <Project Sdk="Microsoft.NET.Sdk">
