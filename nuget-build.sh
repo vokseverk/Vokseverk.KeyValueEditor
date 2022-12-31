@@ -23,16 +23,16 @@ cp src/*.html $PACKAGE_DIR/
 cp src/lang/*.xml $PACKAGE_DIR/Lang/
 
 
-# Copy the Value Converter to the nuuget folder
-cp src/*V10.cs $NUGET_DIR
-
+# Copy the Value Converter and README to the nuget folder
+cp src/v10/*.cs $NUGET_DIR
+cp src/v10/*.md $NUGET_DIR
 
 # Transform the package.xml file
 # xsltproc --novalid --xinclude --output dist/package/package.xml lib/packager.xslt src/package.xml
 
 
 # Create .the csproj file
-xsltproc --novalid --xinclude --output $NUGET_DIR/$PKG_NAME.csproj lib/packager.xslt src/csproj-v10.xml
+xsltproc --novalid --xinclude --output $NUGET_DIR/$PKG_NAME.csproj lib/packager.xslt src/v10/csproj.xml
 
 # Create the .targets file
 xsltproc --novalid --xinclude --output $NUGET_DIR/buildTransitive/$PKG_NAME.targets lib/packager.xslt src/targets.xml
