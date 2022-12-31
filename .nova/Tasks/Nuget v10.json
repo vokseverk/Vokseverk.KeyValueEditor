@@ -6,7 +6,7 @@
     }
   },
   "environment" : {
-    "UMB_VERSION" : "V10"
+    "UMB_VERSION" : "v10"
   },
   "openLogOnRun" : "start"
 }
