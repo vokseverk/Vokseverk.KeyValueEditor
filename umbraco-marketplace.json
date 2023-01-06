@@ -6,7 +6,7 @@
 	"Category": "Editor Tools",
 	"Screenshots": [
 		{
-			"ImageUrl": "http://raw.githubusercontent.com/vokseverk/Vokseverk.KeyValueEditor/main/images/keyvalue-content.jpg",
+			"ImageUrl": "https://raw.githubusercontent.com/vokseverk/Vokseverk.KeyValueEditor/main/images/keyvalue-content.jpg",
 			"Caption": "Editor Screen with 4 sets of keys and values"
 		}
 	],
