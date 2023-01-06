@@ -1,0 +1,14 @@
+{
+	"AuthorDetails": {
+		"Name": "Vokseværk",
+		"ImageUrl": "https://github.com/vokseverk.png"
+	},
+	"Category": "Editor Tools",
+	"Screenshots": [
+		{
+			"ImageUrl": "https://github.com/vokseverk/Vokseverk.KeyValueEditor/blob/main/images/keyvalue-content.jpg",
+			"Caption": "Editor Screen with 4 sets of keys and values"
+		}
+	],
+	"Title": "Vokseværk Key/Value Editor"
+}
