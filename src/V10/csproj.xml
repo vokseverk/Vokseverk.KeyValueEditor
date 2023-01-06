@@ -17,7 +17,7 @@
 		<Authors>&packageAuthor;</Authors>
 		<Copyright>2020 © &packageAuthor;</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>&packageURL;</PackageProjectUrl>
+		<PackageProjectUrl>&packageRepoURL;</PackageProjectUrl>
 		<RepositoryUrl>&packageRepoURL;</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageIcon>vv-keyvalueeditor-icon.png</PackageIcon>
