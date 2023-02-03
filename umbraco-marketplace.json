@@ -1,7 +1,9 @@
 {
 	"AuthorDetails": {
-		"Name": "Vokseværk",
-		"ImageUrl": "https://github.com/vokseverk.png"
+		"Name": "Chriztian Steinmeier",
+		"ImageUrl": "https://github.com/greystate.png",
+		"Description": "Frontend & Umbraco Developer @ Vokseværk in Denmark. 6× Umbraco MVP.",
+		"Url": "https://greystate.dk/who/"
 	},
 	"Category": "Editor Tools",
 	"Screenshots": [
@@ -10,5 +12,5 @@
 			"Caption": "Editor Screen with 4 sets of keys and values"
 		}
 	],
-	"Title": "Vokseværk Key/Value Editor"
+	"Title": "Key/Value Editor"
 }
