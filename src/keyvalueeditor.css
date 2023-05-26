@@ -1,5 +1,5 @@
 .vv-keyvalue-editor {
-	
+
 }
 
 .vv-keyvalue-editor .flex-wrap.textbox-wrapper {
@@ -15,7 +15,7 @@
 
 .vv-keyvalue-editor .vv-keyvalue-value {
 	margin-left: 10px;
-	flex: 1 1 50%;
+	flex: 1;
 }
 
 .vv-keyvalue-key::placeholder,
