@@ -28,10 +28,10 @@
 	$scope.addRemoveOnKeyDown = function (event, index) {
 		var KEY_ESCAPE = 13;
 		var KEY_BACKSPACE = 8;
-		
+
 		var txtBoxValue = $scope.model.value[index];
-		var txtBoxKey = event.target.name === "item_" + index + "_key";
-		
+		var txtBoxKey = event.target.name === ("item_" + index + "_key");
+
 		event.preventDefault();
 
 		switch (event.keyCode) {
@@ -39,25 +39,25 @@
 				if ($scope.model.config.max <= 0 && txtBoxValue.value || $scope.model.value.length < $scope.model.config.max && txtBoxValue.value) {
 					var newItemIndex = index + 1;
 					$scope.model.value.splice(newItemIndex, 0, { key: "", value: "" });
-					
+
 					// Set focus on the newly added value
 					$scope.model.value[newItemIndex].hasFocus = true;
 				}
 				break;
-				
+
 			case KEY_BACKSPACE:
 				if ($scope.model.value.length > $scope.model.config.min) {
 					var remainder = [];
 
 					// Require an extra hit on backspace for the field to be removed
-					if (txtBoxValue.value === "" && txtBoxKey) {
+					if (txtBoxValue.key === "" && txtBoxKey) {
 						backspaceHits++;
 					} else {
 						backspaceHits = 0;
 					}
-					
+
 					// Only a BACKSPACE in the empty "Key" field triggers remove
-					if (txtBoxKey && txtBoxValue.value === "" && backspaceHits === 2) {
+					if (txtBoxKey && txtBoxValue.key === "" && backspaceHits === 2) {
 						for (var x = 0; x < $scope.model.value.length; x++) {
 							if (x !== index) {
 								remainder.push($scope.model.value[x]);

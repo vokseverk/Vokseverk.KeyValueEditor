@@ -26,10 +26,17 @@
 				<description>Enter the maximum number of key/value pairs</description>
 				<view>number</view>
 			</field>
+			<field>
+				<label>Key column split</label>
+				<key>split</key>
+				<description>Enter a CSS length value for the key column's width</description>
+				<view>textstring</view>
+			</field>
 		</prevalues>
 		<defaultConfig>
 			<min>0</min>
 			<max>5</max>
+			<split>140px</split>
 		</defaultConfig>
 	</propertyEditor>
 
