@@ -27,7 +27,9 @@ namespace Vokseverk {
 		public bool? IsValue(object value, PropertyValueLevel level) {
 			switch (level) {
 				case PropertyValueLevel.Source:
-					return value != null && value is List<KeyAndValue>;
+					    return value != null &&
+                        (value is List<KeyAndValue> ||
+                        (value is string strValue && strValue.DetectIsJson() && JsonConvert.DeserializeObject<List<KeyAndValue>>(strValue) is List<KeyAndValue>));
 				default:
 					throw new NotSupportedException($"Invalid level: {level}.");
 			}
